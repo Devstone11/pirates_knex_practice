@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirates</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/pirates/<%= pirate.id %>" method="post">
+      <input type="text" name="name" value="<%= pirate.name %>">
+      <input type="text" name="drink" value="<%= pirate.drink %>">
+      <input type="text" name="accessory" value="<%= pirate.accessory %>">
+      <input type="submit" value="Submit Pirates">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirates</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h2>This is the show page!</h2>
+    <h2><%= pirate.name %></h2>
+    <h3><%= pirate.drink %></h3>
+    <h3><%= pirate.accessory %></h3>
+    <a href="/pirates/<%= pirate.id %>/edit">Edit this pirate!</a>
+    <a href="/pirates/<%= pirate.id %>/delete">Delete this pirate!</a>
+  </body>
+</html>

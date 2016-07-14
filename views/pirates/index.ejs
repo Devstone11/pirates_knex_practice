@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirates</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <a href="pirates/new">Add new pirate</a>
+      <ul>
+        <% for (i=0; i<pirates.length; i++) { %>
+          <li>
+            <a href="/pirates/<%=pirates[i].id%>"><%= pirates[i].name%></a>
+          </li>
+        <% } %>
+      </ul>
+  </body>
+</html>
